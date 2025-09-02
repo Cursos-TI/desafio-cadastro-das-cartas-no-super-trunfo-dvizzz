@@ -10,9 +10,11 @@ int main() {
     // Inicializando variáveis para evitar problemas
     populacao_1, populacao_2 = 300;
     pontosturisticos_1, pontosturisticos_2 = 4;
-    area_1, area_2 = 1521.11;
+    area_1 = 1521.11;
+    area_2 = 100.10;
     pib_1, pib_2 = 300.50;
-    estado_1, estado_2 = 'C', 'D';
+    estado_1 = 'C';
+    estado_2 = 'D';
     codcarta_1[4], codcarta_2[4] = "C03";
     cidade_1[20], cidade_2[20] = "RiodeJaneiro";
     
@@ -50,7 +52,7 @@ int main() {
     printf("- Carta 2 - \n");
     // Pedindo informações ao usuário, e lendo as informações da carta 2 com printf e scanf
     printf("Digite a letra que representa o estado que está na sua carta: \n");
-    scanf("%c", &estado_2);
+    scanf("%s", estado_2);
 
     printf("Digite o código da carta: \n");
     scanf("%s", codcarta_2);
