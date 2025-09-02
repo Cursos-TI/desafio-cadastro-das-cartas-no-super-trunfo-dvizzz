@@ -8,15 +8,20 @@ int main() {
     char estado_1, estado_2, codcarta_1[4], codcarta_2[4], cidade_1[20], cidade_2[20];
 
     // Inicializando variáveis para evitar problemas
-    populacao_1, populacao_2 = 300;
-    pontosturisticos_1, pontosturisticos_2 = 4;
+    populacao_1 = 300;
+    populacao_2 = 400;
+    pontosturisticos_1 = 4;
+    pontosturisticos_2 = 6;
     area_1 = 1521.11;
     area_2 = 100.10;
-    pib_1, pib_2 = 300.50;
+    pib_1 = 300.50;
+    pib_2 = 200.90;
     estado_1 = 'C';
     estado_2 = 'D';
-    codcarta_1[4], codcarta_2[4] = "C03";
-    cidade_1[20], cidade_2[20] = "RiodeJaneiro";
+    codcarta_1[4] = "C03";
+    codcarta_2[4] = "A02";
+    cidade_1[20] = "RiodeJaneiro";
+    cidade_2[20] = "SãoPaulo";
     
     // Mostrando a mensagem "Jogo de Cartas - Super Trunfo" na tela
     printf("Jogo de Cartas - Super Trunfo\n");
@@ -24,7 +29,7 @@ int main() {
     printf("- Carta 1 - \n");
     // Pedindo informações ao usuário, e lendo as informações da carta 1 com printf e scanf
     printf("Digite a letra que representa o estado que está na sua carta: \n");
-    scanf("%c", &estado_1);
+    scanf(" %c", &estado_1);
 
     printf("Digite o código da carta: \n");
     scanf("%s", codcarta_1);
@@ -52,7 +57,7 @@ int main() {
     printf("- Carta 2 - \n");
     // Pedindo informações ao usuário, e lendo as informações da carta 2 com printf e scanf
     printf("Digite a letra que representa o estado que está na sua carta: \n");
-    scanf("%c", estado_2);
+    scanf(" %c", &estado_2);
 
     printf("Digite o código da carta: \n");
     scanf("%s", codcarta_2);
