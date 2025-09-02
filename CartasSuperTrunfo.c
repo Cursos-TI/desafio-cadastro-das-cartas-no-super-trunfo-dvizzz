@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
 
     // Criando as variáveis
     int populacao_1, populacao_2, pontosturisticos_1, pontosturisticos_2;
     float area_1, area_2, pib_1, pib_2;
-    char estado_1, estado_2, codcarta_1[4], codcarta_2[4], cidade_1[20], cidade_2[20];
+    char estado_1, estado_2, codcarta_1[5], codcarta_2[5], cidade_1[20], cidade_2[20];
 
     // Inicializando variáveis para evitar problemas
     populacao_1 = 300;
@@ -19,8 +18,8 @@ int main() {
     pib_2 = 200.90;
     estado_1 = 'C';
     estado_2 = 'D';
-    codcarta_1[4] = "A03";
-    codcarta_2[4] = "A02";
+    codcarta_1[5] = "A03";
+    codcarta_2[5] = "A02";
     cidade_1[20] = "RiodeJaneiro";
     cidade_2[20] = "SãoPaulo";
     
