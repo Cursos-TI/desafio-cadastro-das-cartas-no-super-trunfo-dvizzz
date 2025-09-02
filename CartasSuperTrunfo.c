@@ -52,7 +52,7 @@ int main() {
     printf("- Carta 2 - \n");
     // Pedindo informações ao usuário, e lendo as informações da carta 2 com printf e scanf
     printf("Digite a letra que representa o estado que está na sua carta: \n");
-    scanf("%s", estado_2);
+    scanf("%c", estado_2);
 
     printf("Digite o código da carta: \n");
     scanf("%s", codcarta_2);
