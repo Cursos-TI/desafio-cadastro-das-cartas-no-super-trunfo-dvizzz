@@ -6,6 +6,8 @@ int main() {
     int populacao_1, populacao_2, pontosturisticos_1, pontosturisticos_2;
     float area_1, area_2, pib_1, pib_2;
     char estado_1, estado_2, codcarta_1[4], codcarta_2[4], cidade_1[20], cidade_2[20];
+
+    area_1 = 1521.11;
     
     // Mostrando a mensagem "Jogo de Cartas - Super Trunfo" na tela
     printf("Jogo de Cartas - Super Trunfo\n");
@@ -31,10 +33,10 @@ int main() {
     printf("Digite o número de pontos turísticos que há na cidade: \n");
     scanf("%d", &pontosturisticos_1);
 
-    printf("Carta 1: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: \n", estado_1, codcarta_1, cidade_1);
-    printf("População: %d - Área: %f - PIB: %f - Número de pontos turísticos: %d", pontosturisticos_1, area_1, pib_1, pontosturisticos_1);
+    printf("Carta 1: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_1, codcarta_1, cidade_1);
+    printf(" - População: %d \n - Área: %.2f km² \n - PIB: %.2f bilhões de reais \n - Número de pontos turísticos: %d \n", populacao_1, area_1, pib_1, pontosturisticos_1);
 
-    
+
 
     return 0;
 }
