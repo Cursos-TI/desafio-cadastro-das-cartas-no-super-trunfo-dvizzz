@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 
@@ -18,7 +19,7 @@ int main() {
     pib_2 = 200.90;
     estado_1 = 'C';
     estado_2 = 'D';
-    codcarta_1[4] = "C03";
+    codcarta_1[4] = "A03";
     codcarta_2[4] = "A02";
     cidade_1[20] = "RiodeJaneiro";
     cidade_2[20] = "SãoPaulo";
