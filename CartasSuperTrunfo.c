@@ -49,7 +49,15 @@ int main() {
     printf("Digite o número de pontos turísticos que há na cidade: \n");
     scanf("%d", &pontosturisticos_1);
 
+    // Criando as novas variáveis
     float densipopu_1, densipopu_2, pibperca_1, pibperca_2;
+
+    // Calculando a densidade populacional e o PIB per capita das duas cartas
+    densipopu_1 = (float) populacao_1 / area_1;
+    pibperca_1 = (float) pib_1 / populacao_1;
+
+    densipopu_2 = (float) populacao_2 / area_2;
+    pibperca_2 = (float) pib_2 / populacao_2;
 
     // Apresentando na tela as informações da carta 
     printf("Carta 1: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_1, codcarta_1, cidade_1);
