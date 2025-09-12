@@ -49,6 +49,8 @@ int main() {
     printf("Digite o número de pontos turísticos que há na cidade: \n");
     scanf("%d", &pontosturisticos_1);
 
+    float densipopu_1, densipopu_2, pibperca_1, pibperca_2;
+
     // Apresentando na tela as informações da carta 
     printf("Carta 1: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_1, codcarta_1, cidade_1);
     printf(" - População: %d \n - Área: %.2f km² \n - PIB: %.2f bilhões de reais \n - Número de pontos turísticos: %d \n", populacao_1, area_1, pib_1, pontosturisticos_1);
