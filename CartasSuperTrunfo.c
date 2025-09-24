@@ -14,6 +14,9 @@ int main() {
     // * Nova propriedade *
     float superPoder1, superPoder2;
 
+    // Variáveis que vão armazenar os resultados das comparações
+    int resultadoPopulacao, resultadoArea, resultadoPIB, resultadoPontosTuristicos, resultadoDensiPopulacional, resultadoPIBperCap, resultadoPoder;
+
     // Inicializando variáveis para evitar problemas
     populacao_1 = 300;
     populacao_2 = 400;
@@ -102,13 +105,25 @@ int main() {
     superPoder2 = (float) populacao_2 + area_2 + pib_2 + pontosturisticos_2 + pibperca_2 + (1.0f / densipopu_2);
 
     // Armazenando os valores das comparações
+    resultadoPopulacao = populacao_1 > populacao_2;
+    resultadoArea = area_1 > area_2;
+    resultadoPIB = pib_1 > pib_2;
+    resultadoPontosTuristicos = pontosturisticos_1 > pontosturisticos_2;
+    resultadoDensiPopulacional = densipopu_1 < densipopu_2;
+    resultadoPIBperCap = pibperca_1 > pibperca_2;
+    resultadoPoder = superPoder1 > superPoder2;
 
 
     // Apresentando na tela as informações da carta 1
-    printf("Carta 1: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_1, codcarta_1, cidade_1);
-    printf(" - População: %lu \n - Área: %.2f km² \n - PIB: %.2f bilhões de reais \n - Número de pontos turísticos: %d \n", populacao_1, area_1, pib_1, pontosturisticos_1);
-    printf(" - Densidade Populacional: %.2f hab/km² \n - PIB per Capita: %.2f reais \n", densipopu_1, pibperca_1);
+    printf("Carta 1: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_1, codcarta_1, cidade_1);   
+    printf(" - População: %lu \n", populacao_1);
+    printf(" - Área: %.2f km² \n", area_1);
+    printf(" - PIB: %.2f bilhões de reais \n", pib_1);
+    printf(" - Número de pontos turísticos: %d \n", pontosturisticos_1);
+    printf(" - Densidade Populacional: %.2f hab/km² \n", densipopu_1);
+    printf(" - PIB per Capita: %.2f reais \n", pibperca_1);
     printf(" - *Super Poder*: %.2f\n", superPoder1);
+
 
     // Apresentando na tela as informações da carta 
     printf("Carta 2: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_2, codcarta_2, cidade_2);
