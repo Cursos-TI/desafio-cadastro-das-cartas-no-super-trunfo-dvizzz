@@ -12,7 +12,7 @@ int main() {
     float densipopu_1, densipopu_2, pibperca_1, pibperca_2;
 
     // * Nova propriedade *
-    float superPoder;
+    float superPoder1, superPoder2;
 
     // Inicializando variáveis para evitar problemas
     populacao_1 = 300;
@@ -66,11 +66,6 @@ int main() {
     // Convertendo o pib que está em bilhões multiplicando ele por 1x10⁹ (equivalente a 1 bilhão) e depois dividindo pela população
     pibperca_1 = (float) (pib_1 * 1e9) / populacao_1;
 
-    // Apresentando na tela as informações da carta 
-    printf("Carta 1: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_1, codcarta_1, cidade_1);
-    printf(" - População: %lu \n - Área: %.2f km² \n - PIB: %.2f bilhões de reais \n - Número de pontos turísticos: %d \n", populacao_1, area_1, pib_1, pontosturisticos_1);
-    printf(" - Densidade Populacional: %.2f hab/km² \n - PIB per Capita: %.2f reais \n", densipopu_1, pibperca_1);
-
 
     printf("- Carta 2 - \n");
     // Pedindo informações ao usuário, e lendo as informações da carta 2 com printf e scanf
@@ -100,10 +95,26 @@ int main() {
     
     pibperca_2 = (float) (pib_2 * 1e9) / populacao_2;
 
+    // Calculando o Super Poder
+
+    superPoder1 = (float) populacao_1 + area_1 + pib_1 + pontosturisticos_1 + pibperca_1 + (1.0f / densipopu_1);
+
+    superPoder2 = (float) populacao_2 + area_2 + pib_2 + pontosturisticos_2 + pibperca_2 + (1.0f / densipopu_2);
+
+    // Armazenando os valores das comparações
+
+
+    // Apresentando na tela as informações da carta 1
+    printf("Carta 1: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_1, codcarta_1, cidade_1);
+    printf(" - População: %lu \n - Área: %.2f km² \n - PIB: %.2f bilhões de reais \n - Número de pontos turísticos: %d \n", populacao_1, area_1, pib_1, pontosturisticos_1);
+    printf(" - Densidade Populacional: %.2f hab/km² \n - PIB per Capita: %.2f reais \n", densipopu_1, pibperca_1);
+    printf(" - *Super Poder*: %.2f\n", superPoder1);
+
     // Apresentando na tela as informações da carta 
     printf("Carta 2: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_2, codcarta_2, cidade_2);
     printf(" - População: %lu \n - Área: %.2f km² \n - PIB: %.2f bilhões de reais \n - Número de pontos turísticos: %d \n", populacao_2, area_2, pib_2, pontosturisticos_2);
     printf(" - Densidade Populacional: %.2f hab/km² \n - PIB per Capita: %.2f reais \n", densipopu_2, pibperca_2);
+    printf(" - *Super Poder*: %.2f\n", superPoder2);    
 
     return 0;
 }
