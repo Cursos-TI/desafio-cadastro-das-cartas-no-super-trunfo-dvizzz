@@ -127,9 +127,24 @@ int main() {
 
     // Apresentando na tela as informações da carta 
     printf("Carta 2: \n - Estado: %c \n - Código da carta: %s \n - Nome da Cidade: %s \n", estado_2, codcarta_2, cidade_2);
-    printf(" - População: %lu \n - Área: %.2f km² \n - PIB: %.2f bilhões de reais \n - Número de pontos turísticos: %d \n", populacao_2, area_2, pib_2, pontosturisticos_2);
-    printf(" - Densidade Populacional: %.2f hab/km² \n - PIB per Capita: %.2f reais \n", densipopu_2, pibperca_2);
-    printf(" - *Super Poder*: %.2f\n", superPoder2);    
+    printf(" - População: %lu \n", populacao_2);
+    printf(" - Área: %.2f km² \n", area_2);
+    printf(" - PIB: %.2f bilhões de reais \n", pib_2);
+    printf(" - Número de pontos turísticos: %d \n", pontosturisticos_2);
+    printf(" - Densidade Populacional: %.2f hab/km² \n", densipopu_2);
+    printf(" - PIB per Capita: %.2f reais \n", pibperca_2);
+    printf(" - *Super Poder*: %.2f\n\n", superPoder2);    
+
+    // Resultado das comparações   
+    printf("-- RESULTADO --\n (1) = Carta 1 Venceu\n (0) = Carta 2 Venceu\n");
+    printf(" - População: (%d)\n", resultadoPopulacao);
+    printf(" - Área: (%d)\n", resultadoArea);
+    printf(" - PIB: (%d)\n", resultadoPIB);
+    printf(" - Número de pontos turísticos: (%d)\n", resultadoPontosTuristicos);
+    printf(" - Densidade Populacional: (%d)\n", resultadoDensiPopulacional);
+    printf(" - PIB per Capita: (%d)\n", resultadoPIBperCap);
+    printf(" - *Super Poder*: (%d)\n", resultadoPoder);
+
 
     return 0;
 }
